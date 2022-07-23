@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('index', function () {
-    return view('Front-End.index');
+Route::controller(HomeController::class)->group(function () {
+    Route::get('home', 'index')->name('home');
 });
-Route::get('profile', function () {
-    return view('Front-End.profiles.index');
+Route::controller(ProfileController::class)->group(function () {
+    Route::get('profile', 'index')->name('profile');
 });
-Route::get('test', function () {
-    return view('welcome');
+Route::controller(AuthController::class)->group(function () {
+    Route::get('logout', 'destroy')->name('logout');
 });
+require __DIR__ . '/auth.php';

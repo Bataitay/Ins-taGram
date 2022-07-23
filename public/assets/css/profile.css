@@ -34,7 +34,7 @@ img {
 
 .container {
     max-width: 93.5rem;
-    margin: -30px auto;
+    margin: -45px auto;
     padding: 0 2rem;
 }
 
@@ -392,9 +392,23 @@ Remove or comment-out the code block below to see how the browser will fall-back
     letter-spacing: 1px;
     margin: -20px;
     padding: 0;
-    position: relative;
     text-align: center;
     vertical-align: baseline;
     color: #333;
     /* border-top: 1px solid #4d90fe ; */
+}
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 58px;
+    margin-top: 1rem;
+    width: 216px;
+    padding: 10px 10px 10px 24px;
+    height: 227px;
+    font-size: 15px;
+}
+.dropdown-menu .dropdown-item{
+    padding: 10px;
+}
+.dropdown-menu .dropdown-item i{
+    margin-right: 10px;
 }

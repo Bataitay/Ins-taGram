@@ -29,11 +29,10 @@ body {
     color: var(--txt-color);
 }
 
-/* .container {
-    height: 100vh;
+.container {
     display: flex;
     flex-direction: column;
-} */
+}
 
 .main-container {
     display: flex;
@@ -185,7 +184,7 @@ body {
 }
 
 .btn-login_one {
-    width: 228px;
+    width: 100%;
     border: 1px solid transparent;
     outline: 0;
     cursor: pointer;
@@ -196,8 +195,11 @@ body {
     padding: 5px 9px;
     border-radius: 4px;
     color: #fff;
+    background: #0095f6;
 }
-
+.underline{
+    text-decoration: none;
+}
 .divine {
     padding: 10px 40px 18px;
     display: flex;

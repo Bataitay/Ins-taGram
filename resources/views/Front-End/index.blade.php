@@ -92,8 +92,8 @@
                             <img src="{{ asset('assets/images/profile-pic.png') }}" alt="">
                         </div>
                         <div>
-                            <p class="username">modern_web_channel</p>
-                            <p class="sub-text">kunaal kumar</p>
+                            <p class="username">{{Auth::user()->name}}</p>
+                            <p class="sub-text">kunaal </p>
                         </div>
                         <button class="action-btn">switch</button>
                     </div>
